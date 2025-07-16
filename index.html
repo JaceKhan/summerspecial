@@ -114,7 +114,7 @@
         <div class="info">수업료: <span class="fee">무료</span></div>
         <div class="info">비재원생 수강가능여부: <span class="badge not-allowed">X</span></div>
         <div class="info">수업요일 및 시간: 엑셀파일 참조</div>
-        <a class="apply-btn" href="https://naver.me/GCgkG85E" target="_blank" rel="noopener">신청하기</a>
+        <a class="apply-btn" id="apply-closed" href="https://naver.me/GCgkG85E" target="_blank" rel="noopener">신청하기</a>
         <img src="diagram_class.jpg" alt="다이아그램 특강 강의 사진" style="width:100%;margin-top:10px;border-radius:10px;box-shadow:0 2px 8px rgba(30,40,80,0.08);">
       </div>
       <!-- 카드 4 -->
@@ -192,4 +192,10 @@
     </div>
   </div>
 </body>
+<script>
+  document.getElementById('apply-closed').addEventListener('click', function(e) {
+    e.preventDefault();
+    alert('인원 마감되었습니다.');
+  });
+</script>
 </html> 
